@@ -1,0 +1,6 @@
+start = int(input("What number should I start: "))
+end = int(input("What number should I count to: "))
+step = int(input("Enter the amount to count by: "))
+
+for number in range(start, end + 1, step):
+    print(number)

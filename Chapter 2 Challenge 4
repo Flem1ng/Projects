@@ -1,0 +1,10 @@
+car_price = float(input("Enter the base price of the car: "))
+
+tax = car_price * 0.10
+license_fee = car_price * 0.05
+dealer_prep = 500
+destination_charge = 300
+
+total_price = car_price + tax + license_fee + dealer_prep + destination_charge
+
+print("Actual price of the car:", total_price)

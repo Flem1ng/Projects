@@ -1,0 +1,7 @@
+bill = float(input("Enter the restaurant bill total: "))
+
+tip15 = bill * 0.15
+tip20 = bill * 0.20
+
+print("15 percent tip:", tip15)
+print("20 percent tip:", tip20)

@@ -1,0 +1,22 @@
+import random
+
+words = ["python", "apple", "school", "computer", "football"]
+
+word = random.choice(words)
+
+print("The word has", len(word), "letters.")
+
+for i in range(5):
+    letter = input("Guess a letter: ")
+
+    if letter in word:
+        print("Yes")
+    else:
+        print("No")
+
+guess = input("Now guess the word: ")
+
+if guess == word:
+    print("Correct! You win!")
+else:
+    print("Wrong! The word was:", word)

@@ -1,0 +1,11 @@
+import random
+
+fortunes = [
+    "You will have a great day!",
+    "Success is coming soon.",
+    "A surprise awaits you.",
+    "You will learn something new today.",
+    "Good luck is on your side."
+]
+
+print(random.choice(fortunes))

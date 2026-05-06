@@ -1,0 +1,23 @@
+import random
+
+low = 1
+high = 100
+
+print("Think of a number between 1 and 100.")
+input("Press Enter when you are ready...")
+
+while True:
+    guess = random.randint(low, high)
+    print("Computer guesses:", guess)
+
+    answer = input("Is it high, low, or correct? ")
+
+    if answer == "correct":
+        print("The computer guessed your number!")
+        break
+    elif answer == "high":
+        high = guess - 1
+    elif answer == "low":
+        low = guess + 1
+    else:
+        print("Please type high, low, or correct.")

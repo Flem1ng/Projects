@@ -1,0 +1,2 @@
+icecream = input("Enter your favourite ice cream flavour: ")
+print("My favourite ice cream is", icecream)

@@ -1,0 +1,25 @@
+# Legal variable names
+user_name = "Legal because it uses letters and underscore"
+age2 = "Legal because it starts with a letter"
+favoriteFood = "Legal because it has no spaces"
+
+# Illegal variable names
+# 2age = "Illegal because it starts with a number"
+# user-name = "Illegal because it uses a dash"
+# favorite food = "Illegal because it has a space"
+
+# Good legal names
+student_name = "Good because it is clear"
+total_price = "Good because it explains the value"
+
+# Bad legal names
+x = "Bad because it is not clear"
+thing = "Bad because it is too general"
+
+print(user_name)
+print(age2)
+print(favoriteFood)
+print(student_name)
+print(total_price)
+print(x)
+print(thing)

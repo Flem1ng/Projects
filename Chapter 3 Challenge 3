@@ -1,0 +1,26 @@
+import random
+
+number = random.randint(1, 100)
+guesses = 5
+
+print("Guess the number between 1 and 100")
+
+while guesses > 0:
+    guess = int(input("Enter your guess: "))
+
+    if guess == number:
+        print("Correct! You win!")
+        break
+
+    elif guess < number:
+        print("Too low!")
+
+    else:
+        print("Too high!")
+
+    guesses -= 1
+    print("Guesses left:", guesses)
+
+if guesses == 0:
+    print("You failed! Better luck next time.")
+    print("The number was:", number)

@@ -1,0 +1,31 @@
+import random
+
+words = {
+    "python": "A programming language",
+    "apple": "A fruit",
+    "school": "A place to learn",
+    "computer": "An electronic device"
+}
+
+word = random.choice(list(words.keys()))
+hint = words[word]
+
+jumble = "".join(random.sample(word, len(word)))
+
+score = 10
+
+print("Jumbled word:", jumble)
+
+choice = input("Do you want a hint? yes/no: ")
+
+if choice == "yes":
+    print("Hint:", hint)
+    score -= 5
+
+guess = input("Guess the word: ")
+
+if guess == word:
+    print("Correct!")
+    print("Score:", score)
+else:
+    print("Wrong! The word was:", word)

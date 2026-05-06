@@ -1,0 +1,6 @@
+food1 = input("Enter your first favourite food: ")
+food2 = input("Enter your second favourite food: ")
+
+new_food = food1 + food2
+
+print("Your new food is:", new_food)
